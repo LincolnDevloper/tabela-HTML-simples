@@ -3,24 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
 	<title>Tabela Html + Tailwind CSS</title>
 </head>
 <body>
-	<table>
+	<table class="border-collapse border border-slate-900 border-collapse:hover">
 		<thead>
-			<tr>
-				<th>Teste</th>
+			<tr class="m-4">
+				<th class="border border-slate-600 bg-slate-300">Teste</th>
+				<th class="border border-slate-600 bg-slate-300">Teste</th>
+				<th class="border border-slate-600 bg-slate-300">Teste</th>
+				<th class="border border-slate-600 bg-slate-300">Teste</th>
 			</tr>
 		</thead>
 
 		<tbody>
 			<tr>
-				<td>teste</td>
+				<td class="border border-slate-700">teste</td>
+				<td class="border border-slate-700">teste</td>
+				<td class="border border-slate-700">teste</td>
+				<td class="border border-slate-700">teste</td>
 			</tr>
 		</tbody>
 
 		<tfoot>
-
+			<tr>
+				<td class="border border-slate-700">Total</td>
+				<td class="border border-slate-700">0$</td>
+			</tr>
 		</tfoot>
 	</table>
 </body>

@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<title>Tabela Html + Tailwind CSS</title>
 </head>
-<body>
-	<table class="border-collapse border border-slate-900 border-collapse:hover">
-		<thead>
-			<tr class="m-4">
-				<th class="border border-slate-600 bg-slate-300">Teste</th>
-				<th class="border border-slate-600 bg-slate-300">Teste</th>
-				<th class="border border-slate-600 bg-slate-300">Teste</th>
-				<th class="border border-slate-600 bg-slate-300">Teste</th>
-			</tr>
-		</thead>
 
-		<tbody>
-			<tr>
-				<td class="border border-slate-700">teste</td>
-				<td class="border border-slate-700">teste</td>
-				<td class="border border-slate-700">teste</td>
-				<td class="border border-slate-700">teste</td>
-			</tr>
-		</tbody>
+<body class="bg-slate-600">
+	<div class="flex items-center justify-center h-screen">
+		<span class="bg-slate-800 p-4 w-[170px] h-16 absolute left-[690px] top-[466px] text-white flex flex-row-reverse font-bold">Reais</span>
+		<table class="rounded-xl text-white/80 bg-gray-400 bg-opacity-25 shadow-2xl shadow-gray-800 backdrop-blur">
+			<thead>
+				<tr>
+					<th class="text-2xl p-2.5 border-b">Teste</th>
+					<th class="text-2xl p-2.5 border-b">Teste</th>
+					<th class="text-2xl p-2.5 border-b">Teste</th>
+					<th class="text-2xl p-2.5 border-b">Teste</th>
+				</tr>
+			</thead>
 
-		<tfoot>
-			<tr>
-				<td class="border border-slate-700">Total</td>
-				<td class="border border-slate-700">0$</td>
-			</tr>
-		</tfoot>
-	</table>
+			<tbody>
+				<tr>
+					<td class="p-2.5 border-b">teste</td>
+					<td class="p-2.5 border">teste</td>
+					<td class="p-2.5 border">teste</td>
+					<td class="p-2.5 border-b">teste</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td colspan="3" class="font-bold text-2xl p-4">Total:</td>
+					<td class="p-4 text-2xl">0$</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
 </body>
+
 </html>
